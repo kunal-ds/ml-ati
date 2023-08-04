@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Titanic Prediction</title>
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+</head>
+<body>
+   <div class="main">
+        <div class="register">
+            <h2>Titanic Prediction Page!</h2>
+            <form action= "/predict/" id="register" method="post">
+                
+                <label for="pclass">Choose a Passenger class:</label> 
+                    <select name="pclass" id="cars"> 
+                    <option value=1>Upper</option>
+                    <option value=2>Middle</option>
+                    <option value=3>Lower</option> 
+                <br><br>
+                <label>Gender : </label> 
+                <br>
+                <input type="radio" id="male" name="gender" value = 'male'>
+                <spam id="male">Male</spam>
+                <input type="radio" id="female" name="gender" value = 'female'>
+                <spam id="female">Female</spam>                
+                <br><br>
+
+                <label>Age : </label> 
+                <br>
+                <input type="number" id="Age" name="age" placeholder="Enter your age ">
+                <br>
+                <br>
+
+                <label>Sibling Spouse count : </label> 
+                <br>
+                <input type="number" id="SibSp" name="sibsp" placeholder="Enter int numbers only ">
+                <br>
+                <br>
+
+                <label>Parent Child count : </label> 
+                <br>
+                <input type="number" id="Parch" name="parch" placeholder="Enter int numbers only ">
+                <br>
+                <br>
+
+                <label>Fare : </label> 
+                <br>
+                <input type="number" step="0.01" id="Fare" name="fare" placeholder="Enter the fare amount ">
+                <br>
+                <br>
+
+                <label for="embarked">Choose a Station:</label> 
+                    <select name="embarked" id="Embarked"> 
+                    <option value="C">Cherbourg</option>
+                    <option value="Q">Queenstown</option>
+                    <option value="S">Southampton</option> <br><br>
+
+                &nbsp; &nbsp; <input type="submit" value="Submit">
+
+            </form>
+        </div>
+   </div>
+</body>
+</html>
+

@@ -1,0 +1,9 @@
+python -m venv env/
+add .gitignore
+.\env\Scripts\activate
+
+pip install cryptography Flask gunicorn numpy pandas PyMySQL SQLAlchemy
+pip install scikit-learn==1.2.2
+
+
+pip freeze > requirements.txt
